@@ -5,7 +5,7 @@ function printError(elemId, hintMsg) {
 
 // Defining a function to validate form 
 function validateForm() {
-    // Retrieving the values of form elements 
+//form ele,mts
     var name = document.contactForm.name.value;
     var email = document.contactForm.email.value;
     var mobile = document.contactForm.mobile.value;
@@ -15,12 +15,11 @@ function validateForm() {
     var checkboxes = document.getElementsByName("hobbies[]");
     for(var i=0; i < checkboxes.length; i++) {
         if(checkboxes[i].checked) {
-            // Populate hobbies array with selected values
             hobbies.push(checkboxes[i].value);
         }
     }
     
-	// Defining error variables with a default value
+	// Defie error variables with a default value
     var nameErr = emailErr = mobileErr = countryErr = genderErr = true;
     
     // Validate name
