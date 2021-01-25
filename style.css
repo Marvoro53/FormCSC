@@ -1,7 +1,38 @@
-input:invalid {
-    border: 2px dashed red;
-  }
-  
-  input:valid {
-    border: 2px solid black;
-  }
+body {
+  font-size: 16px;
+  background: #f9f9f9;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+h2{
+  text-decoration: underline;
+  color: Green;
+}
+form {
+  width: 300px;
+  background: rgb(139, 128, 128);
+  padding: 15px 40px 40px;
+  border: 1px solid;
+  margin: 50px auto 0;
+  border-radius: 5px;
+  filter: drop-shadow(4px 4px 4px gray);
+}
+.error {
+  color: red;
+  font-size: 90%;
+}
+input[type="submit"] {
+  font-size: 110%;
+  font-weight: 100;
+  background: green;
+  border-color: black;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: gray;
+}
+.row {
+  padding-bottom: 10px;
+}
